@@ -1,0 +1,368 @@
+html { font-size: 16px; }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*general styles*/
+body {
+    background-color: #f4f4f4;
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2, h3, nav, .logo, .subtext, .circled-content p:first-child  {
+    text-transform: uppercase;
+}
+
+h3, nav, .logo, .subtext, .circled-content p:first-child  {
+    font-size: clamp(10px, 4vw, 13px);
+}
+
+h1, .logo {
+    color: #424242;
+    font-size: clamp(30px, 4vw, 44px);
+    font-family: 'Russo One', sans-serif;
+    padding-right: 17px;
+}
+
+h2 {
+    font-size: clamp(16px ,4vw, 21.9px);
+    font-family: 'Russo One', sans-serif;
+    border-left: 5px solid #f67c05;
+    padding-left: 20px;
+    margin: 10px 0 20px 0px;;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(33,33,33,255);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.subtext, a:hover{
+    color: #f67c05;
+}
+
+.story p, .wrapper div:last-child {
+    line-height: 1.5;
+}
+
+.content-wrapper {
+    width: clamp(18rem, 90%, 67rem);
+    margin: auto;
+}
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 16vh;
+    margin-bottom: 18px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.container-about .wrapper, .container-contact .wrapper {
+    max-width: 64rem;
+}
+
+.container-about .wrapper section:first-child , .container-contact .wrapper form:first-child {
+    margin-right: 1.9rem;
+}
+
+.subtext {
+    border-left: 1px dotted #f67c05;
+    padding-left: 20px;
+    font-weight: bold;
+    height: 19px;
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* nav styles */
+nav {
+    width: 30rem;
+    border-bottom: 1px solid rgb(75, 75, 75);
+}
+
+nav li {
+    margin-right: 3.1rem;
+}
+
+nav li:hover {
+    border-bottom: 1px solid #f67c05;
+    padding-bottom: 13px;
+}
+/*li a:hover {
+    border-bottom: 1px solid #f67c05;
+    padding-bottom: 8px;
+    border-: 40px;
+}*/
+header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 1.8rem 0 2.2rem 0;
+}
+
+.content-wrapper .logo {
+    font-size:clamp(20px, 4vw, 25.92px);
+    color: #fff;
+}
+
+
+/* stylesfor HOME section */
+.container-home {
+    background-image: url(images/placeholder2.jpg);
+    height: 40vh;
+}
+
+/* stylesfor WORK section */
+.project-example {
+    text-align: center;
+    margin: 18px 10px 100px;
+}
+
+.project-area {
+    font-style: italic;
+    color: #6a7684;
+    font-size: clamp(12px,2vw, 12.8px);
+}
+
+.image-projects, .circle {
+    border-radius: 48%;
+    width: 100%;
+    height: 85%;
+    max-width: 21.5rem;
+}
+
+
+.circle {
+    background-color: white;
+    height: 23.5rem;
+    margin: auto;
+    box-shadow: 0 0.1px 0.1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.circled-content {
+    width: 50%;
+    margin: auto;
+}
+
+.circled-content p:first-child {
+    font-weight: bold;
+}
+
+/* stylesfor ABOUT section */
+.container-about {
+    background-color: #2a2a2a;
+    height: fit-content;
+}
+
+.container-about .header-wrap {
+    padding-top: 117px;
+    margin-top: 0;
+}
+
+.container-about h1, .container-about h2, .container-about .wrapper p {
+    color: #fff;
+}
+
+
+.about-image {
+    background: url(images/office.jpg) no-repeat center;
+    width: clamp(18rem, 100%, 64rem);
+    height: 12rem;
+    margin: 25px 25px 25px 0;
+}
+
+.story, .education {
+    flex-basis: 50%;
+    padding-right: 1.9rem;
+    padding-bottom: 2.2rem;
+}
+
+/* styling ACCORDIONS */
+
+
+h3 {
+    padding: 10px 0 10px 30px;
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+  
+input[type="checkbox"]:checked + .acc-title h3 {
+    background-color: #fff;
+    color: black;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+  
+input[type="checkbox"]:checked + .acc-title + .acc-content {
+    max-height: 555px;
+}
+  
+input[type="checkbox"]:checked + .acc-title + .acc-content p {
+    opacity: 1;
+}
+
+.acc-section {
+    position: relative;
+    padding-top: 3px;
+}
+
+.acc-section p {
+    line-height: 1.2;
+}
+
+.accordion {
+    display: block;
+    overflow: hidden;
+    margin: 2px 0;
+}
+
+.acc-title {
+    background-color: #f67c05;
+    border-radius: 4px;
+    position: relative;
+    z-index: 599;
+    cursor: pointer;
+    
+}
+
+.acc-content {
+    position: relative;
+    padding: 0;
+    max-height: 0px;
+}
+
+.acc-content p {
+    position: relative;
+    padding: 0.9rem 2.6rem 0.9rem 1.8rem;
+    margin: 0;
+}
+/* stylesfor CONTACT section */
+
+form {
+    text-align: left;
+}
+
+iframe {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 15rem;
+}
+
+textarea, .container-contact input {
+    border: 0.5px solid #2a2a2a;
+}
+
+button {
+    background-color: #f67c05;
+    border: none;
+    width: 40%;
+    height: 4.5rem;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+textarea, .form-width {
+    width: 100%;
+    margin-top: 5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+button img {
+    padding-top: 5px;
+    width: clamp(40px, 100%, 61px);
+    
+}
+
+button:hover, button:focus {
+    background-color: #2a2a2a;
+}
+
+.container-contact form, .container-contact .wrapper div:last-child {
+ flex-basis: 50%;
+ padding-right: 1.9rem;
+}
+
+.container-contact ul {
+    margin-bottom: 10px;
+}
+
+.container-contact li {
+    margin-right: 7px;
+}
+
+
+.container-contact input{
+    height: 2rem;
+}
+
+.container-contact label{
+    height: 4.5rem;
+}
+
+.container-contact div:last-child {
+    margin-bottom: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+/* MEDIA QUARIES */
+
+
+@media screen and (max-width: 700px) {
+    
+    header ul {
+        display: inline;
+    }
+
+    nav {
+        width: fit-content;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+  
+    .subtext {
+        text-align: unset;
+    }
+
+ 
+}

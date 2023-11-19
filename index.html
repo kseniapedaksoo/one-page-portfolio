@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>One-page Portfolio</title>
+</head>
+<body>
+    <!-- Start of the fixed header with navigation-->
+    <header>
+        <div class="content-wrapper ">
+            <p class="logo">Ksenia Pedaksoo</p>
+            <nav>
+                <ul class="menu">
+                    <li><a class="menuItem" href="#">Home</a></li>
+                    <li><a class="menuItem" href="#work">Work</a></li>
+                    <li><a class="menuItem" href="#about">About</a></li>
+                    <li><a class="menuItem" href="#contact">Contact</a></li>
+                </ul>
+                <button class="hamburger"></button> <!-- this button prepared for JS-->
+            </nav>
+        </div>
+    </header>
+    <!-- End of the fixed header with navigation-->
+
+    <!-- Start of the HOME section -->
+    <div class="container-home"></div>
+    <!-- End of the HOME section -->
+
+     <!-- Start of the WORK section -->
+    <section id="work" class="container-work">
+        <div class="content-wrapper">
+            <div class="header-wrap">
+                <h1>Work</h1>
+                <p class="subtext">Some of my projects</p>
+            </div>
+            <div class="wrapper">
+                <section class="project-example">
+                    <div class="circle">
+                        <img src="images/image-1.jpg" class="image-projects" alt=" ">
+                        <div class="circled-content">
+                            <p>Slowmo fall</p>
+                            <p class="project-area">photo manipulation</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="project-example">
+                    <div class="circle">
+                        <img src="images/image-2.jpg" class="image-projects" alt=" ">
+                        <div class="circled-content">
+                            <p>Speed audi</p>
+                            <p class="project-area">marketing</p>
+                        </div>
+                    </div>                  
+                </section>
+                <section class="project-example">
+                    <div class="circle">
+                        <img src="images/image-3.jpg" class="image-projects" alt=" ">
+                        <div class="circled-content">
+                            <p>The wild one</p>
+                            <p class="project-area">illustration</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+     <!-- End of the WORK section -->
+
+    <!-- Start of the ABOUT section -->
+    <section id="about" class="container-about">
+        <div class="content-wrapper">
+            <div class="header-wrap">
+                <h1>About</h1>
+                <p class="subtext">Learn more about me</p>
+            </div>
+            <div class="about-image"></div>
+            <div class="wrapper">
+                <section class="story">
+                    <h2>Story:</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
+                <section class="education">
+                    <h2>Education:</h2>
+                    <!-- Start of accordions using CSS only-->
+                    <div class="acc-section">
+                        <label class="accordion" for="accordion-first">
+                            <input id="accordion-first" type="checkbox" checked/>
+                            <div class="acc-title">
+                                <h3>Design school 2002</h3>
+                            </div>
+                            <div class="acc-content">
+                                <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </label>
+
+                        <label class="accordion" for="accordion-second">
+                            <input id="accordion-second" type="checkbox" checked/>
+                            <div class="acc-title">
+                                <h3>Design special school 2005</h3>
+                            </div>
+                            <div class="acc-content">
+                                <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </label>
+
+                        <label class="accordion" for="accordion-third">
+                            <input id="accordion-third" type="checkbox" checked/>
+                            <div class="acc-title">
+                                <h3>Design pro school 2009</h3>
+                            </div>
+                            <div class="acc-content">
+                                <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </label>
+                   </div>
+                </section>
+            </div>
+        </div>
+    </section>
+     <!-- End of the ABOUT section -->
+
+    <!-- Start of the CONTACT section -->
+    <section id="contact" class="container-contact">
+        <div class="content-wrapper">
+            <div class="header-wrap">
+                <h1>Contact</h1>
+                <p class="subtext">Where I am</p>
+            </div>
+            <ul>
+                <li><a href="https://www.flickr.com/"><img src="images/flickr.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/"><img src="images/instagram.png" alt=""></a></li>
+                <li><a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt=""></a></li>
+                <li><a href="https://www.linkedin.com"><img src="images/linkedin.png" alt=""></a></li>
+            </ul>
+            <div class="wrapper">
+                <form action="" method="">
+                    <label class="form-width" for="full-name">Name:
+                        <input id="full-name" class="form-width" type="text">
+                    </label>
+                    <label class="form-width" for="email">Email:
+                        <input id="email" class="form-width" type="email">
+                    </label>
+                    <label  class="form-width" for="comment">Comments:
+                        <textarea id="comment" ></textarea>
+                    </label>
+                    <button id="submitForm" type="submit"><img src="images/send.png" alt=""></button>
+                </form>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1608.8038684604405!2d73.45427042146653!3d3.845165372242101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b40a1f4050c33b1%3A0x18f02266650332a7!2sSunset%20Jacuzzi%20Water%20Villa!5e0!3m2!1sen!2sie!4v1687459256266!5m2!1sen!2sie" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- END of the CONTACT section -->
+
+</body>
+</html>
